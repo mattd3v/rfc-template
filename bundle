@@ -2,9 +2,9 @@
 # Then, concatenate the abstract and
 # contents within respective guards.
 
-echo '---'
-cat sources/metadata.yml
-echo '--- abstract'
-cat sources/abstract.txt
-echo '--- middle'
-cat sources/contents.mkd
+echo '---'               >  bundle.mkd
+cat sources/metadata.yml >> bundle.mkd
+echo '--- abstract'      >> bundle.mkd
+cat sources/abstract.txt >> bundle.mkd
+echo '--- middle'        >> bundle.mkd
+cat sources/contents.mkd >> bundle.mkd
