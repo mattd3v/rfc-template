@@ -31,4 +31,4 @@ jobs:
           path: bundle.mkd
       - uses: mattd3v/mkd2xml
         with:
-          path: bundle.mkd
+          filename: bundle.mkd
