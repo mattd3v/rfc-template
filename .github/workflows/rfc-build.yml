@@ -29,6 +29,6 @@ jobs:
         with:
           name: bundle
           path: bundle.mkd
-      - uses: .github/actions/mkd2xml
+      - uses: ./.github/actions/mkd2xml
         with:
           path: bundle.mkd
