@@ -29,6 +29,6 @@ jobs:
         with:
           name: bundle
           path: bundle.mkd
-      - uses: mattd3v/mkd2xml@v1
+      - uses: mattd3v/mkd2xml@master
         with:
           filename: bundle.mkd
