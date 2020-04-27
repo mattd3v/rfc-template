@@ -34,8 +34,8 @@ jobs:
           filename: bundle.mkd
       - uses: actions/upload-artifact@v1
         with:
-          name: xml
-          path: output
+          name: build
+          path: build.xml
 
   build:
     name: Build RFC
@@ -44,8 +44,9 @@ jobs:
     steps:
       - uses: actions/download-artifact@v1
         with:
-          name: xml
+          name: build
           path: build.xml
       - run: apt install --yes xml2rfc
-      - run: xml2rfc build.xml
+      - run: xml2rfc --basename rfc build.xml
+      - run: cat rfc.txt
 
