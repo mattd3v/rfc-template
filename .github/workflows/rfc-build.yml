@@ -46,7 +46,7 @@ jobs:
         with:
           name: build
           path: build.xml
-      - run: apt install --yes xml2rfc
+      - run: sudo apt-get install --yes xml2rfc
       - run: xml2rfc --basename rfc build.xml
       - run: cat rfc.txt
 
